@@ -10,7 +10,7 @@ int main(void)
 
 	while (x <= 122)
 	{
-		if (x == 'q' || x == 'e' )
+		if (x == 'q' || x == 'e')
 		{
 			x++;
 			continue;
