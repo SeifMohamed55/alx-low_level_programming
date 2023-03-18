@@ -35,6 +35,7 @@ int main(void)
 					break;
 				putchar(',');
 				putchar(' ');
+				z++;
 			}
 			y++;
 		}
