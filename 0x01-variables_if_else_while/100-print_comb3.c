@@ -11,7 +11,7 @@ int main(void)
 
 	while (x <= 9)
 	{
-		while (y <= 1)
+		while (y <= 9)
 		{
 			putchar(x + '0');
 			putchar(y + '0');
@@ -19,10 +19,10 @@ int main(void)
 				break;
 			putchar(',');
 			putchar(' ');
-			x++;
 			y++;
 
 		}
+		x++;
 	}
 	putchar('\n');
 	return (0);
