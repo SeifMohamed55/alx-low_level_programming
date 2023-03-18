@@ -13,7 +13,7 @@ int main(void)
 		putchar(x);
 		x++;
 	}
-	putchar(' ');
+	putchar('\n');
 	return (0);
 
 }
