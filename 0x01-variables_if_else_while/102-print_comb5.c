@@ -22,6 +22,13 @@ int main(void)
 				z = 0;
 				while (z <= 9)
 				{
+				 	int l = x*10 + y;
+					int r = q*10 + z;
+					if (l >= r)
+					{
+						z++;
+						continue;
+					}
 					putchar(x + '0');
 					putchar(y + '0');
 					putchar(' ');
