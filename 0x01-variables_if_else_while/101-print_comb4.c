@@ -20,6 +20,7 @@ int main(void)
 				y++;
 				continue;
 			}
+			z = 1;
 			while (z <= 9)
 			{
 				if (y >= z)
