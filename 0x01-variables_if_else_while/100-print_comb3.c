@@ -11,6 +11,7 @@ int main(void)
 
 	while (x <= 9)
 	{
+		y = 1;
 		while (y <= 9)
 		{
 			putchar(x + '0');
