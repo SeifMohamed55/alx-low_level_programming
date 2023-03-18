@@ -7,11 +7,11 @@
 int main(void)
 {
 	int x = 0;
-	int y = 1;
+	int y = 0;
 
 	while (x <= 9)
 	{
-		y = 1;
+		y = 0;
 		while (y <= 9)
 		{
 			putchar(x + '0');
