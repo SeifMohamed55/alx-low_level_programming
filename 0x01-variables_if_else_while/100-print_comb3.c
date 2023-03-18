@@ -14,6 +14,9 @@ int main(void)
 		y = 1;
 		while (y <= 9)
 		{
+			if (x >= y)
+				continue;
+
 			putchar(x + '0');
 			putchar(y + '0');
 			if (x == 9)
