@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <ctype.h>
 /**
  * _isalpha - checks if letter is an alphabet
  * @c : the letter to be checked
