@@ -8,7 +8,7 @@ void jack_bauer(void)
 {
 	char x = '0', y = '0', z = '0', w = '0';
 
-	while (x <= '2' )
+	while (x <= '2')
 	{
 		y = '0';
 		while (y <= '9')
