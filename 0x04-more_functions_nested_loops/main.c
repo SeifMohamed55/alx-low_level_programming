@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "main.h"
-int main ()
+int main(void)
 {
-	
-	return 0;
-
+    print_diagonal(0);
+    print_diagonal(2);
+    print_diagonal(10);
+    print_diagonal(-4);
+    return (0);
 }
