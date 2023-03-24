@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * print_diagonal - prints diagonal
+ * print_square - prints diagonal
  * @n: number
  *
  * Return: void
  */
-void print_diagonal(int n)
+void print_square(int n)
 {
 	int l;
 	int size = n;
