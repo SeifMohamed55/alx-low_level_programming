@@ -13,5 +13,5 @@ void print_diagonal(int n)
 		n--;
 	
 	}
-	_putchar('/');
+	_putchar('\\');
 }
