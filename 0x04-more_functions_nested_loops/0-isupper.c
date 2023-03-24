@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 #include <ctype.h>
 /**
  * _isupper - retuns if the char is upper or not
