@@ -16,9 +16,9 @@ void rev_string(char *s)
 	}
 	for (i = sum - 1, j = 0 ; i >= sum / 2 ; i--, j++)
 	{
-		int temp = a[j];
+		int temp = s[j];
 
-		a[j] = a[i];
-		a[i] = temp;
+		s[j] = s[i];
+		s[i] = temp;
 	}
 }
