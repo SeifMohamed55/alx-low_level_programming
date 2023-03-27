@@ -16,7 +16,7 @@ void print_rev(char *s)
 	}
 	for (i = sum ; i >= 0 ; i--)
 	{
-		_putchar(a[i]);
+		_putchar(s[i]);
 	}
 
 
