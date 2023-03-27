@@ -22,6 +22,6 @@ void puts2(char *str)
 			_putchar(str[i]);
 		i++;
 	}
-	_purchar('\0');
+	_putchar('\0');
 
 }
