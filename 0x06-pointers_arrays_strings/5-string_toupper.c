@@ -13,5 +13,6 @@ char *string_toupper(char *x)
 	while (x[i] != '\0')
 	{
 		x[i] = toupper(x[i]);
+		i++;
 	}
 }
