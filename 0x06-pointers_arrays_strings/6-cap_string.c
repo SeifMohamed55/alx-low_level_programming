@@ -20,7 +20,7 @@ char *cap_string(char *x)
 				|| x[i] == '}')
 		{
 			x[i + 1] = toupper(x[i + 1]);
-			i++;
 		}
+		i++;
 	}
 }
