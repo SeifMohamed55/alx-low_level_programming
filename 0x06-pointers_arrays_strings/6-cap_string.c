@@ -19,6 +19,8 @@ char *cap_string(char *x)
 				|| x[i] == '(' || x[i] == ')' || x[i] == '{'
 				|| x[i] == '}')
 		{
+			if (x[i + 1] == '\0')
+				break;
 			x[i + 1] = toupper(x[i + 1]);
 		}
 		i++;
