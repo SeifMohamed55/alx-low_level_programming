@@ -11,7 +11,7 @@ void print_diagsums(int *a, int size)
 {
 	int i = 0;
 	int j = 0;
-	long long sum1 = 0, sum2 = 0;
+	long sum1 = 0, sum2 = 0;
 
 	for (i = 0 ; i < 2 ; i++)
 	{
@@ -19,11 +19,13 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == 0)
 			{
-				sum1 += a[0][j];
+				sum1 += a[0];
+				a[0]++;
 			}
 			if (i == 1)
 			{
-				sum += a[size - 1][j];
+				sum2 += a[size - 1];
+				a[size - 1]++;
 			}
 		}
 	}
