@@ -3,7 +3,7 @@
 /**
  * alloc_grid - makes a 2d matrix
  * @width: no of cols
- * @heigt: no of rows
+ * @height: no of rows
  *
  * Return: ptr to the matrinx
  */
@@ -11,7 +11,7 @@ int **alloc_grid(int width, int height)
 {
 	int **x, i;
 
-	if (width <= 0 || height <=0)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 	x = malloc(sizeof(int) * height);
 	for (i = 0 ; i < width ; i++)
