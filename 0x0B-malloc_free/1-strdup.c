@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib>
+#include <stdlib.h>
 /**
  * _strdup - return a pointer to a new string which is a duplicate of old string
  * @str: old string
