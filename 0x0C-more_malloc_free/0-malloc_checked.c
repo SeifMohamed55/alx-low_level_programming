@@ -4,7 +4,7 @@
  * malloc_checked - allocate memory with specific value
  * @b: number of memory blocks to allocate
  *
- * Return: Void
+ * Return: pointer of Void
  */
 void *malloc_checked(unsigned int b)
 {
