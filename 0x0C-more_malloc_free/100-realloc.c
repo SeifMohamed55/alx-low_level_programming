@@ -6,7 +6,7 @@
  * @a:first num
  * @b: the second num
  *
- * Return minimum
+ * Return: minimum
  */
 int min(int a, int b)
 {
@@ -46,8 +46,20 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			free(ptr);
 			return (NULL);
 		}
+		memcpy(new, ptr, old_size);
+		free(ptr);
+	}
+	else
+	{
+		new = malloc(new_size);
+		if (new == NULL)
+		{
+			free(ptr);
+			return (NULL);
+		}
 		memcpy(new, ptr, min(old_size, new_size));
 		free(ptr);
+		
 	}
 	return (new);
 
