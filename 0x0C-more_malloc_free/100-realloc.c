@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * min - retuns the minimum
  * @a:first num
@@ -25,7 +26,7 @@ int min(int a, int b)
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *new
+	void *new;
 
 	if (new_size == old_size)
 		return (ptr);
