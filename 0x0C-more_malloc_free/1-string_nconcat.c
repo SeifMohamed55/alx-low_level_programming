@@ -12,12 +12,14 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int x1 = strlen(s1), x2 = strlen(s2), i = 0, j = 0;
-	char *new = malloc((x1 + x2 + 1) * sizeof(char) );
+	char *new;
 
-	if (new == NULL)
-		return (NULL);
 	if (n >= x2)
 		n = x2;
+	new = malloc((x1 + n + 1) * sizeof(char));
+	if (new == NULL)
+		return (NULL);
+
 	while (s1[i] != '\0')
 	{
 		new[i] = s1[i];
