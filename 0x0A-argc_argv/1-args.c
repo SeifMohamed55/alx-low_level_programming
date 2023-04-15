@@ -10,5 +10,6 @@
 int main(int argc, char *argv[])
 {
 	printf("%d\n", argc);
+	argv[0] = "sad";
 	return (0);
 }
