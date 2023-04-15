@@ -27,17 +27,17 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *new
 
-	if(new_size == old_size)
+	if (new_size == old_size)
 		return (ptr);
 	if (ptr == NULL)
 	{
 		free(ptr);
 		new = malloc(new_size);
-		if(new == NULL)
+		if (new == NULL)
 			return (NULL);
 		return (new);
 	}
-	if(new_size > old_size)
+	if (new_size > old_size)
 	{
 		new = malloc(new_size);
 		if (new == NULL)
