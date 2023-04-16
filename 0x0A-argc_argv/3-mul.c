@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int i, j;
 
-	if (argc == 3 )
+	if (argc == 3)
 	{
 		i = atoi(argv[1]);
 		j = atoi(argv[argc - 1]);
