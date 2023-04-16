@@ -15,10 +15,8 @@ int num(char *str)
 	len = strlen(str);
 	while (i < len)
 	{
-		if (a[i] < '0' || a[i] > '9')
+		if (str[i] < '0' || str[i] > '9')
 			return (-1);
-
-		num = num * 10 + (a[i] - '0');
 		i++;
 	}
 	return (1);
