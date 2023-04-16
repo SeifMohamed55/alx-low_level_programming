@@ -1,28 +1,27 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * num - check if argument isnum
  * @str: tje string to be checked
  *
- * Return : 0 if not and 1 if true
+ * Return: 0 if not and 1 if true
  */
 int num(char *str)
 {
-	int i = 0, j, len;
+	int i = 0, len;
 
 	len = strlen(str);
 	while (i < len)
 	{
 		if (a[i] < '0' || a[i] > '9')
 			return (-1);
-		else
-		{
-			num = num * 10 + (a[i] - '0');
-		}
+
+		num = num * 10 + (a[i] - '0');
 		i++;
 	}
-	return (num);
+	return (1);
 }
 
 
