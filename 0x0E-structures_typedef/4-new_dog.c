@@ -3,6 +3,19 @@
 #include <stdlib.h>
 #include <string.h>
 /**
+ * free-3 - free the dog part
+ * @name: ptr
+ * @owner: ptr
+ *
+ * Return: void;
+ */
+void free3(dog_t *d, char *name, char *owner)
+{
+	free(d);
+	free(name);
+	free(owner);
+}
+/**
  * new_dog - creates a new dog
  * @name: name
  * @age: age
@@ -17,12 +30,20 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *Nowner = malloc(sizeof(strlen(owner)));
 
 	if (new == NULL)
+	{
+		free3(new, Nname, Nowner);
 		return (NULL);
-
+	}
 	if (Nname == NULL)
+	{
+		free3(new, Nname, Nowner);
 		return (NULL);
+	}
 	if (Nowner == NULL)
+	{
+		free3(new, Nname, Nowner);
 		return (NULL);
+	}
 	Nname = strcpy(Nname, name);
 	Nowner = strcpy(Nowner, owner);
 	new->name = Nname;
