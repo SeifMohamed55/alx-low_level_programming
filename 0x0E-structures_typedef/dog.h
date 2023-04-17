@@ -4,7 +4,7 @@
  * struct dog - struct about dog
  * @name: array of char
  * @age: age
- * owner: array of char
+ * @owner: array of char
  */
 struct dog
 {
