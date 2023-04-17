@@ -3,11 +3,12 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * free-3 - free the dog part
+ * free3 - free the dog part
  * @name: ptr
  * @owner: ptr
+ * @d: the struct
  *
- * Return: void;
+ * Return: void
  */
 void free3(dog_t *d, char *name, char *owner)
 {
