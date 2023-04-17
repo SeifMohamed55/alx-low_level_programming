@@ -23,7 +23,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	if (Nowner == NULL)
 		return (NULL);
-	*Nage = age;
 	Nname = strcpy(Nname, name);
 	Nowner = strcpy(Nowner, owner);
 	new->name = Nname;
