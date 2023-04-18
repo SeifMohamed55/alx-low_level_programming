@@ -7,7 +7,7 @@
  *
  * Return: sqrt , -1
  */
-int _sqrt(int n , int c)
+int _sqrt(int n, int c)
 {
 	if (c * c == n)
 		return (c);
@@ -24,8 +24,6 @@ int _sqrt(int n , int c)
  */
 int _sqrt_recursion(int n)
 {
-	
-
 	if (n == 0)
 		return (0);
 	if (n == 1)
