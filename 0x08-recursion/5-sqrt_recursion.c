@@ -13,8 +13,7 @@ int _sqrt(int n , int c)
 		return (c);
 	if (c * c > n)
 		return (-1);
-	if (c * c < n)
-		return (_sqrt(n, c+1));
+	return (_sqrt(n, c + 1));
 }
 
 /**
