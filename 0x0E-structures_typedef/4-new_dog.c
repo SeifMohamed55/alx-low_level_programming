@@ -35,12 +35,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free3(new, Nname, Nowner);
 		return (NULL);
 	}
-	if (Nname == NULL)
+	if (Nname == NULL || name == NULL)
 	{
 		free3(new, Nname, Nowner);
 		return (NULL);
 	}
-	if (Nowner == NULL)
+	if (Nowner == NULL || owner == NULL)
 	{
 		free3(new, Nname, Nowner);
 		return (NULL);
