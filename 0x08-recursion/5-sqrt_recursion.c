@@ -1,7 +1,7 @@
 #include "main.h"
 #include <math.h>
 /**
- * sqr - sqrt
+ * _sqrt - sqrt
  * @n: the num
  * @c: counter
  *
