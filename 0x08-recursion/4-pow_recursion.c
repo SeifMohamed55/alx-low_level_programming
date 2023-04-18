@@ -9,5 +9,7 @@
  */
 int _pow_recursion(int x, int y)
 {
-	return (pow((double)x, (double)y));
+	if (y < 0)
+		return (-1);
+	return ((int)(pow((double)x, (double)y)));
 }
