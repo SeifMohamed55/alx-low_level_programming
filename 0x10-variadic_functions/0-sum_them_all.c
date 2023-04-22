@@ -8,7 +8,7 @@ int sum_them_all(const unsigned int n ,...)
 
 	va_start(lis, n);
 	k = 0;
-	for (i = 0; i < k; i++)
+	for (i = 0; i < n; i++)
 	{
 		k += va_arg(lis, int);
 	}
