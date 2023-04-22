@@ -13,14 +13,14 @@ void print_all(const char * const format, ...)
 {
 	int i = 0;
 	va_list list;
-	char *sep = "";
+	char *sep ;
+	char v;
 
 	va_start(list, format);
-	while(format[i] != '\0' && i < strlen(format))
+	while(format[i] != '\0' && i < (int)strlen(format))
 	{
-		if (i == strlen - 1)
-			sep = "";
-		swtich (format[i])
+		v = format[i];
+		swtich (v)
 		{
 			case 'c':
 				printf("%c%s", va_arg(list, char), sep);
@@ -47,7 +47,9 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		i++;
+		 if (i == (int)(strlen(format) - 1))
+			 sep = "";
 	}
-	va_end(ls);
+	va_end(list);
 	printf("\n");
 }
