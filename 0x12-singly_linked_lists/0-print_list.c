@@ -24,9 +24,9 @@ size_t print_list(const list_t *h)
 			printf("[%d] ",i);
 			for (j = 0; j < p->len ; j++)
 			{
-				putchar(p->str[j]);
+				_putchar(p->str[j]);
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 		i++;
 		p = p->next;
