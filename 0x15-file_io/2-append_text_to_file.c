@@ -20,7 +20,7 @@ int _strlen(char *x)
 	return (i);
 }
 /**
- * create_file - createfile
+ * append_text_to_file  - append text
  * @filename: files na,e
  * @text_content: sakpdkas
  * Return: int
