@@ -27,7 +27,7 @@ int _strlen(char *x)
  */
 int create_file(const char *filename, char *text_content)
 {
-	int op, i = 0;
+	int op, i = 0, len;
 
 	if (filename == NULL)
 		return (-1);
@@ -54,7 +54,12 @@ int create_file(const char *filename, char *text_content)
 			}
 			i++;
 		}
-		_strlen(text_content);
+		len = _strlen(text_content);
+		if (len != i)
+		{
+			close(op);
+			return (-1);
+		}
 		return (1);
 	}
 }
