@@ -27,13 +27,13 @@ int _strlen(char *x)
  */
 int create_file(const char *filename, char *text_content)
 {
-	int op, i = 0, len;
+	int op, i = 0;
 
 	if (filename == NULL)
 		return (-1);
 	if (text_content == NULL)
 	{
-		op = open(filename, O_CREAT | O_TRUNC, 0600);
+		op = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 		close(op);
 		return (1);
 	}
@@ -54,12 +54,7 @@ int create_file(const char *filename, char *text_content)
 			}
 			i++;
 		}
-		len = _strlen(text_content);
-		if (len != i)
-		{
-			close(op);
-			return (-1);
-		}
+		_strlen(text_content);
 		return (1);
 	}
 }
