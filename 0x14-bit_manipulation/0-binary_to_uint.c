@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * pow - power
+ * power - power
  * @a: the num
  * @b: the power
  *
