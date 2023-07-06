@@ -22,7 +22,7 @@ void print_binary(unsigned long int n)
 		c++;
 	}
 	x = n;
-	for (i = 1 << (c-1) ; i > 0 ; i = i >> 1)
+	for (i = 1 << (c - 1) ; i > 0 ; i = i >> 1)
 	{
 		if (i & n)
 			_putchar('1');
