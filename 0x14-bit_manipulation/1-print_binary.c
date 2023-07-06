@@ -8,10 +8,26 @@
  */
 void print_binary(unsigned long int n)
 {
+	int c = 0, i;
+	unsigned long int x = n;
 	if (n == 0)
 	{
+		_putchar('0');
 		return;
 	}
-	print_binary(n / 2);
-	_putchar('0' + (n % 2));
+	while (x != 0)
+	{
+		x = x >> 1;
+		c++;
+	}
+	c--;
+	x = n;
+	for (i = 1 << c ; i > 0 ; i /= 2)
+	{
+		if (i & n)
+			_putchar('1');
+		else
+			_putchar('0');
+	}
+
 }
