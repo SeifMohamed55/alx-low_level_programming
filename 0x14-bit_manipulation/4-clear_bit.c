@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <limits.h>
 /**
- * set_bit - prjkfabuba
+ * clear_bit - prjkfabuba
  * @n: decimal num
  * @index: index
  *
