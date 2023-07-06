@@ -48,5 +48,6 @@ unsigned int binary_to_uint(const char *b)
 		c--;
 		i++;
 	}
-	return (fin/2);
+	return (fin / 2);
+
 }
