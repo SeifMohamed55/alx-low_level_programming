@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * get_bit - prjkfabuba
+ * set_bit - prjkfabuba
  * @n: decimal num
  * @index: index
  *
