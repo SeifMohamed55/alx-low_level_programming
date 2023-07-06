@@ -9,10 +9,17 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int i = n ^ m;
-	unsigned long int x = 1 << 30;
-	int c = 0;
+	unsigned long int i = n ^ m, ni = n, mi = m;
+	unsigned long int x;
+	int c = 0, len = 0;
 
+	while (ni > 0 || mi > 0)
+	{
+		ni = ni >> 1;
+		mi = mi >> 1;
+		len++;
+	}
+	x = 1 << (len - 1);
 	while (x > 0)
 	{
 		if (i & x)
@@ -21,3 +28,4 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	}
 	return (c);
 }
+
