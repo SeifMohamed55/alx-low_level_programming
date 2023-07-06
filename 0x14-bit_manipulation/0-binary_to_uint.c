@@ -12,7 +12,7 @@ unsigned int power(int a, int b)
 	unsigned int pow = 1;
 	int i;
 
-	for (i = 0; i < b ; i++)
+	for (i = 0; i < b - 1 ; i++)
 	{
 		pow *= a;
 	}
@@ -48,6 +48,6 @@ unsigned int binary_to_uint(const char *b)
 		c--;
 		i++;
 	}
-	return (fin / 2);
+	return (fin);
 
 }
