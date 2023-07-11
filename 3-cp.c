@@ -56,13 +56,19 @@ int main(int argc, char *argv[])
 	buf = malloc(BUF_SIZE * sizeof(char));
 	if(!buf)
 	{
-		return (freeall(op_to, op_from, buf, -1));
+		close(op_to);
+		close(op_from);
+		free(buf);
+		return (freeall(,-1));
 	}
 	x = read(op_from, buf, BUF_SIZE);
 	if(x == -1)
 	{
+		close(op_to);
+		close(op_from);
+		free(buf);
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		return (freeall(op_to, op_from, buf, 98));
+		return (98);
 
 	}
 	while(x != 0)
@@ -70,14 +76,20 @@ int main(int argc, char *argv[])
 		y = write(op_to, buf, x);
 		if(y == -1)
 		{
+			close(op_to);
+			close(op_from);
+			free(buf);
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-			return (freeall(op_to, op_from, buf, 99));
+			return (99);
 		}
 		x = read(op_from, buf, BUF_SIZE);
 		if(x == -1)
 		{
+			close(op_to);
+			close(op_from);
+			free(buf);
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-			return (freeall(op_to, op_from, buf, 98));
+			return (98);
 
 		}
 	}
