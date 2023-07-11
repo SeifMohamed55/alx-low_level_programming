@@ -26,7 +26,7 @@ int freeall(int fd1, int fd2, char *buf, int ret)
  * @argc: no of param
  * @argv: param
  *
- * return: 0 on success
+ * Return: 0 on success
  */
 int main(int argc, char *argv[])
 {
